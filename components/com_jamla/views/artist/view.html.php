@@ -37,7 +37,7 @@ class JamlaViewArtist extends JViewLegacy
 		$this->queuedArtists = $this->get('queuedArtists');
 
 		//$comp = JComponentHelper::getComponent('com_jamla');
-		$params = JComponentHelper::getParams('com_jamla','station');
+		$params = JComponentHelper::getParams('com_jamla');
 		$this->station = $params['station'];
 		$this->disableRequestsForRecentlyPlayedSongs = $params['disableRequestsForRecentlyPlayedSongs'];
 		$this->disableRequestsForQueuedArtists = $params['disableRequestsForQueuedArtists'];

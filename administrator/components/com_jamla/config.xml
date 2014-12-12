@@ -44,7 +44,23 @@
                label="Station Name"
                description="Station Name"
                default="0"
-               />
+                />
+
+        <field name="samhost"
+               type="text"
+               label="SAM Host"
+               description="SAM Port"
+               default="0"
+                />
+
+        <field name="samport"
+               type="text"
+               label="SAM Port"
+               description="SAM Port"
+               default="0"
+                />
+
+
 
     </fieldset>
 	<!-- Permissions: shows up in the permissions tab of the component -->

@@ -15,7 +15,7 @@ $doc->addStyleSheet('/media/jamla/css/bootstrap-theme.min.css');
 $doc->addStyleSheet('/media/jamla/css/oasisoverrides.css');
 $doc->addStyleSheet('/media/jamla/css/glyphicons-halflings-regular.svg');
 $doc->addStyleSheet('/media/jamla/css/bootstrap.min.js');
-$doc->addScript('/media/jamla/js/jamla.js');
+$doc->addScript('/media/jamla/js/jamla.js?v=123');
 
 // Activate the highlighter if enabled.
 if (!empty($this->query->highlight) && $this->params->get('highlight_terms', 1))

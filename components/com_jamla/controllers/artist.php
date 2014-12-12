@@ -20,7 +20,6 @@ require_once(JPATH_COMPONENT . '/controller.php');
 
 class JamlaControllerArtist extends JamlaController
 {
-	protected $input;
 
 	function display()
 	{
@@ -29,17 +28,60 @@ class JamlaControllerArtist extends JamlaController
 
 	function request()
 	{
+		$input = JFactory::getApplication()->input;
+		$songid = $input->getInt('songid');
+		$params = JComponentHelper::getParams('com_jamla');
+		$samhost = $params['samhost'];
+		$samport = $params['samport'];
 
 		/*
-		$document = JDocument::getInstance('raw');  //this new instance is a raw document object
-		$viewType = $document->getType();
+ settype($songid,"integer"); //Make sure songID is an integer to avoid SQL injection
 
-		$this->getView('artist', $viewType);
-		$this->input->set('view', 'artist');
-		*/
-		$songid = $this->input->getInt('songid');
+ $host = $GLOBALS["REMOTE_ADDR"];
 
-		echo $songid;
+ $request = "GET /req/?songID=$songid&host=".urlencode($host)." HTTP\1.0\r\n\r\n";
+
+$xmldata = "";
+$fd = @fsockopen($samhost,$samport, $errno, $errstr, 30);
+//$fd = fopen("http://$samhost:$samport/req/?songID=$songID&host=".urlencode($host),"r");
+//echo "fd=$fd";
+if(!empty($fd))
+{
+	fputs ($fd, $request);
+	$line="";
+  	while(!($line=="\r\n"))
+  	{
+		$line=fgets($fd,128);
+	}	// strip out the header
+  	while ($buffer = fgets($fd, 4096))
+ 	{
+		$xmldata  .= $buffer;
+	}
+ 	fclose($fd);
+}* */
+		$songid = 56;
+
+
+		$request = "GET /req/?songID=$songid&host=".urlencode($samhost)." HTTP\1.0\r\n\r\n";
+
+		$fp = stream_socket_client($samhost . ":" . $samport, $errno, $errstr, 30);
+		if (!$fp)
+		{
+			echo "$errstr ($errno)<br />\n";
+		}
+		else
+		{
+			fwrite($fp, $request);
+			while (!feof($fp))
+			{
+				$response = fgets($fp, 4096);
+			}
+			fclose($fp);
+		}
+
+
+
+		echo $response;
 		exit();
 
 

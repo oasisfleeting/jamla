@@ -61,5 +61,10 @@ class JamlaFrontendHelper {
 
 	}
 
+	public static function sendStream($fp)
+	{
+
+	}
+
 
 }

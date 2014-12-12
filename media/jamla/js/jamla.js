@@ -4,10 +4,11 @@
 
 jQuery(document).ready(function(){
    jQuery('.request-btn').click(function(){
-       var reqid = jQuery(this).attr('id');
+       var butClicked = jQuery(this);
+       var reqid = butClicked.attr('id');
        var url = 'index.php?option=com_jamla&task=artist.request&songid=' + reqid;
-       jQuery.get(url,function(response){
-           console.log(response);
-       });
+       /*jQuery.get(url,function(response){
+           butClicked.parent().parent().append('<div>testing</div>');
+       });*/
    });
 });
