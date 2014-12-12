@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<!-- Component options: stuff you add here will show up in the admin back-end -->
+	<fieldset name = "component" label = "COM_JAMLA_COMPONENT_LABEL" description = "COM_JAMLA_COMPONENT_DESC">
+        <field name="disableRequestsForRecentlyPlayedSongs"
+               type="radio"
+               label="Disable Requests For Recently Played Songs"
+               description="Disable Requests For Recently Played Songs"
+               default="0"
+                >
+            <option value="0">JYES</option>
+            <option value="1">JNO</option>
+        </field>
+
+        <field name="disableRequestsForQueuedArtists"
+               type="radio"
+               label="Disable Requests For Queued Artists"
+               description="Disable Requests For Queued Artists"
+               default="0"
+                >
+            <option value="0">JYES</option>
+            <option value="1">JNO</option>
+        </field>
+
+        <field name="disableRequestsForQueuedSongs"
+               type="radio"
+               label="Disable Requests For Queued Songs"
+               description="Disable Requests For Queued Songs"
+               default="0"
+                >
+            <option value="0">JYES</option>
+            <option value="1">JNO</option>
+        </field>
+
+        <field name="songWait"
+               type="text"
+               label="Song Wait"
+               description="Song Wait"
+               default="0"
+                />
+
+        <field name="station"
+               type="text"
+               label="Station Name"
+               description="Station Name"
+               default="0"
+               />
+
+    </fieldset>
+	<!-- Permissions: shows up in the permissions tab of the component -->
+	<fieldset name = "permissions" description = "JCONFIG_PERMISSIONS_DESC" label = "JCONFIG_PERMISSIONS_LABEL">
+		<field name = "rules" type = "rules"
+			component = "com_jamla"
+			filter = "rules"
+			validate = "rules"
+			label = "JCONFIG_PERMISSIONS_LABEL"
+			section = "component"/>
+    </fieldset>
+
+
+
+
+
+
+</config>

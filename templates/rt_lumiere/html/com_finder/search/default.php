@@ -1,0 +1,63 @@
+<?php
+/**
+ * @package     Joomla.Site
+ * @subpackage  com_finder
+ *
+ * @copyright   Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE
+ */
+
+defined('_JEXEC') or die;
+
+JHtml::_('behavior.framework');
+JHtml::addIncludePath(JPATH_COMPONENT . '/helpers/html');
+JHtml::stylesheet('com_finder/finder.css', false, true, false);
+/*$doc = JFactory::getDocument();
+$doc->addStyleSheet('/media/jamla/css/bootstrap.min.css');
+$doc->addStyleSheet('/media/jamla/css/bootstrap-theme.min.css');
+$doc->addStyleSheet('/media/jamla/css/glyphicons-halflings-regular.svg');
+$doc->addStyleSheet('/media/jamla/css/bootstrap.min.js');
+$doc->addStyleSheet('/media/jamla/css/oasisoverrides.css');*/
+//musicbrainz
+//include(JPATH_LIBRARIES . '/MusicBrainz/phpBrainz.class.php');
+
+
+?>
+
+<div class="finder<?php echo $this->pageclass_sfx; ?>">
+<?php if ($this->params->get('show_page_heading')) : ?>
+<h1>
+	<?php if ($this->escape($this->params->get('page_heading'))) : ?>
+		<?php echo $this->escape($this->params->get('page_heading')); ?>
+	<?php else : ?>
+		<?php echo $this->escape($this->params->get('page_title')); ?>
+	<?php endif; ?>
+</h1>
+<?php endif; ?>
+
+<?php if ($this->params->get('show_search_form', 1)) : ?>
+	<div id="search-form">
+		<?php echo $this->loadTemplate('form'); ?>
+	</div>
+<?php endif;
+
+// Load the search results layout if we are performing a search.
+if ($this->query->search === true):
+?>
+	<div id="search-results">
+		<?php echo $this->loadTemplate('results'); ?>
+	</div>
+<?php endif; ?>
+</div>
+
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		var mbz  = '<?php //echo json_encode($this->mbargs , JSON_HEX_APOS); ?>';
+		jQuery.each(mbz,function(i,val){
+			console.log(i);
+		});
+	});
+</script>
+
+
+

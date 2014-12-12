@@ -1,0 +1,154 @@
+@charset "utf-8";
+/**
+ * Copyright (c) 2013 Chris Roberts <chris45964596@msn.com>
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *
+ * @category   Joomla 2.5
+ * @package    com_sam2joom
+ * @subpackage nowplaying
+ * @version    1.1.12
+ * @link       http://www.sam2joom.com/
+ */
+
+/* Song Info */
+
+.albumcoverSongInfo {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    margin: 5px;
+    float: right;
+}
+
+.artistSongInfo {
+    /*color: #FFB028;*/
+    font-size: 14pt;
+    margin: 5px;
+}
+
+.artistSongInfo a {
+    text-decoration: none;
+}
+
+.titleSongInfo {
+    /*color: #FFB028;*/
+    font-size: 16pt;
+    margin: 5px 5px 20px;
+}
+
+.titleSongInfo a {
+    text-decoration: none;
+}
+
+.albumSongInfo {
+    font-weight: bold;
+}
+
+.albumSongInfo a {
+    text-decoration: none;
+}
+
+.durationSongInfo {
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.overallrating-labelSongInfo {
+    float: left;
+    width: 120px;
+    font-weight: bold;
+}
+
+.overallratingSongInfo {
+    font-size: 14px;
+    margin-left: 120px;
+    /*color: #FFB028;*/
+}
+
+.overallratingSongInfo a {
+    text-decoration: underline;
+}
+
+.overallratingSongInfo ul.star-rating {
+    float: left;
+}
+
+.yourrating-labelSongInfo {
+    float: left;
+    width: 120px;
+    font-weight: bold;
+}
+
+.yourrating-labelSongInfo img {
+    margin-top: -10px;
+}
+
+.yourratingSongInfo {
+    font-size: 14px;
+    margin-left: 120px;
+    /*color: #FFB028;*/
+}
+
+.requestSongInfo {
+    float: right;
+}
+
+.lyricsBlock {
+    width: 45%;
+    float: left;
+    padding: 10px;
+    clear: left;
+}
+
+.lyrics {
+    margin: 10px 0;
+    border-radius: 8px;
+    background: #EEEEEE;
+    padding: 5px 10px;
+}
+
+.commentsBlock {
+    width: 45%;
+    float: right;
+    padding: 10px;
+}
+
+.addComment {
+    float: right;
+}
+
+.comment {
+    margin-bottom: 5px;
+    border-radius: 8px;
+    background: #EEEEEE;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+.commentor {
+    float: right;
+    font-size: 12px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.songinfoBlock {
+    width: 300px;
+    float: left;
+    min-height: 39px;
+    margin-left: 25px;
+}
+
+/* End Song Info */
+

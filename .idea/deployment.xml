@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" promptOnRemoteOverwrite="CHECK_CONTENT" serverName="musiclabradio" stopOnFirstError="true" promptOnLocalOverwrite="false" filePermissions="420" folderPermissions="493" compareModeInSync="TIMESTAMP">
+    <serverData>
+      <paths name="localhost">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/home/admin/web/public_html/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="musiclabradio">
+        <serverdata>
+          <mappings>
+            <mapping deploy="web/musiclabradio.net/public_html" local="$PROJECT_DIR$" web="web/musiclabradio.net/public_html" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
+

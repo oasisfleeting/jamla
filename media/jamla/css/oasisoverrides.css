@@ -1,0 +1,45 @@
+@charset "utf-8";
+/**
+ * Copyright (c) oasisfleeting
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *
+ * @category   Joomla 2.5
+ * @package    com_sam2joom
+ * @subpackage nowplaying
+ * @version    1.1.12
+ * @link       http://www.silicon-prairie.net/
+ */
+
+
+.searchByLetter .searchLetter a.letterStyle
+{
+    color:white;
+
+}
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input
+{
+    background-color: #fff !important;
+    padding: 14px !important;
+}
+
+
+.btn:hover
+{
+    color:#fff !important;
+}
+
+#search-results ul li div div h4 .request-btn
+{
+    margin-right:2em;
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type = "component" version = "3.0" method = "upgrade">
+	<name>Jamla</name>
+	<creationDate>25</creationDate>
+	<author>oasis fleeting</author>
+	<authorEmail>developer@silicon-prairie.net</authorEmail>
+	<authorUrl>silicon-prairie.net</authorUrl>
+	<copyright>Copyright 25</copyright>
+	<license>wtfpl</license>
+	<version>1.0.0</version>
+	<!-- Description contents contained in separate language file: see languages folder -->
+	<description>COM_JAMLA_COMPONENT_DESC</description>
+
+	<!-- Runs on install/uninstall/update; New in 1.6 -->
+	<scriptfile>install-uninstall.php</scriptfile>
+
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver = "mysqli" charset = "utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver = "mysqli" charset = "utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update> <!-- Runs on update; New in 1.6 -->
+		<schemas>
+			<schemapath type = "mysqli">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	<scriptfile>install-uninstall.php</scriptfile>
+
+	<media destination="jamla" folder="media">
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+	</media>
+
+
+	<files folder = "site">		
+		<folder>helpers</folder>
+		<folder>models</folder>				
+		<folder>views</folder>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		<filename>jamla.php</filename>
+	</files>
+	<languages folder = "site">
+		<language tag = "en-GB">languages/en-GB/en-GB.com_jamla.ini</language>
+	</languages>	
+
+
+
+	<administration>
+		<menu link = "option=com_jamla" img = "components/com_jamla/assets/img/jamla_icon.png">COM_JAMLA_COMPONENT_LABEL</menu>
+		<submenu>
+			<menu view = "settings" img = "components/com_jamla/assets/img/settings_icon.png" alt = "JAMLA/Settings">COM_JAMLA_SETTINGS</menu>
+		</submenu>
+
+		<files folder = "admin">
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<folder>assets</folder>
+			<filename>index.html</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>			
+			<filename>jamla.php</filename>
+		</files>
+
+		<languages folder = "admin">
+			<language tag = "en-GB">languages/en-GB/en-GB.com_jamla.ini</language>
+			<language tag = "en-GB">languages/en-GB/en-GB.com_jamla.sys.ini</language>
+		</languages>
+
+	</administration>
+
+</extension>

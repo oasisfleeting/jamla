@@ -1,0 +1,73 @@
+/*             styles for the star rater  2              */
+.small-overallrating ul.star-rating, .overallrating ul.star-rating, .yourrating ul.star-rating, .overallratingSongInfo ul.star-rating, .yourratingSongInfo ul.star-rating {
+    list-style: none !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 100px !important;
+    height: 20px !important;
+    position: relative !important;
+    background: url('../images/star_rating.gif') top left repeat-x !important;
+}
+.small-overallrating ul.star-rating li, .overallrating ul.star-rating li, .yourrating ul.star-rating li, .overallratingSongInfo ul.star-rating li, .yourratingSongInfo ul.star-rating li {
+    padding:0px !important;
+    margin:0px !important;
+    /*\*/
+    float: left !important;
+    /* */
+}
+.small-overallrating ul.star-rating li a, .overallrating ul.star-rating li a, .yourrating ul.star-rating li a, .overallratingSongInfo ul.star-rating li a, .yourratingSongInfo ul.star-rating li a {
+    display:block !important;
+    width:20px !important;
+    height: 20px !important;
+    text-decoration: none !important;
+    text-indent: -9000px !important;
+    z-index: 20 !important;
+    position: absolute !important;
+    padding: 0px !important;
+    text-align: left;
+}
+.small-overallrating ul.star-rating li a:hover, .overallrating ul.star-rating li a:hover, .yourrating ul.star-rating li a:hover, .overallratingSongInfo ul.star-rating li a:hover, .yourratingSongInfo ul.star-rating li a:hover {
+    background: url('../images/star_rating.gif') left center !important;
+    z-index: 2 !important;
+    left: 0px !important;
+}
+.small-overallrating ul.star-rating a.one-star, .overallrating ul.star-rating a.one-star, .yourrating ul.star-rating a.one-star, .overallratingSongInfo ul.star-rating a.one-star, .yourratingSongInfo ul.star-rating a.one-star {
+    left: 0px !important;
+}
+.small-overallrating ul.star-rating a.one-star:hover, .overallrating ul.star-rating a.one-star:hover, .yourrating ul.star-rating a.one-star:hover, .overallratingSongInfo ul.star-rating a.one-star:hover, .yourratingSongInfo ul.star-rating a.one-star:hover {
+    width:20px !important;
+}
+.small-overallrating ul.star-rating a.two-stars, .overallrating ul.star-rating a.two-stars, .yourrating ul.star-rating a.two-stars, .overallratingSongInfo ul.star-rating a.two-stars, .yourratingSongInfo ul.star-rating a.two-stars {
+    left:20px !important;
+}
+.small-overallrating ul.star-rating a.two-stars:hover, .overallrating ul.star-rating a.two-stars:hover, .yourrating ul.star-rating a.two-stars:hover, .overallratingSongInfo ul.star-rating a.two-stars:hover, .yourratingSongInfo ul.star-rating a.two-stars:hover {
+    width: 40px !important;
+}
+.small-overallrating ul.star-rating a.three-stars, .overallrating ul.star-rating a.three-stars, .yourrating ul.star-rating a.three-stars, .overallratingSongInfo ul.star-rating a.three-stars, .yourratingSongInfo ul.star-rating a.three-stars {
+    left: 40px !important;
+}
+.small-overallrating ul.star-rating a.three-stars:hover, .overallrating ul.star-rating a.three-stars:hover, .yourrating ul.star-rating a.three-stars:hover, .overallratingSongInfo ul.star-rating a.three-stars:hover, .yourratingSongInfo ul.star-rating a.three-stars:hover {
+    width: 60px !important;
+}
+.small-overallrating ul.star-rating a.four-stars, .overallrating ul.star-rating a.four-stars, .yourrating ul.star-rating a.four-stars, .overallratingSongInfo ul.star-rating a.four-stars, .yourratingSongInfo ul.star-rating a.four-stars {
+    left: 60px !important;
+}
+.small-overallrating ul.star-rating a.four-stars:hover, .overallrating ul.star-rating a.four-stars:hover, .yourrating ul.star-rating a.four-stars:hover, .overallratingSongInfo ul.star-rating a.four-stars:hover, .yourratingSongInfo ul.star-rating a.four-stars:hover {
+    width: 80px !important;
+}
+.small-overallrating ul.star-rating a.five-stars, .overallrating ul.star-rating a.five-stars, .yourrating ul.star-rating a.five-stars, .overallratingSongInfo ul.star-rating a.five-stars, .yourratingSongInfo ul.star-rating a.five-stars {
+    left: 80px !important;
+}
+.small-overallrating ul.star-rating a.five-stars:hover, .overallrating ul.star-rating a.five-stars:hover, .yourrating ul.star-rating a.five-stars:hover, .overallratingSongInfo ul.star-rating a.five-stars:hover, .yourratingSongInfo ul.star-rating a.five-stars:hover {
+    width: 100px !important;
+}
+.small-overallrating ul.star-rating li.current-rating, .overallrating ul.star-rating li.current-rating, .yourrating ul.star-rating li.current-rating, .overallratingSongInfo ul.star-rating li.current-rating, .yourratingSongInfo ul.star-rating li.current-rating {
+    background: url('../images/star_rating.gif') left bottom !important;
+    position: absolute !important;
+    height: 20px !important;
+    display: block !important;
+    text-indent: -9000px !important;
+    z-index: 1 !important;
+    text-align: left;
+}
+
